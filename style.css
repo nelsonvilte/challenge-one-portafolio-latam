@@ -252,19 +252,133 @@ section.hobbies div.hobbies__box ul {
 
 /* Experiencia Académica*/
 
-section.academic {}
+section.academic {
+    padding: 64px 0;
+    background-color: var(--color-fondo-azul);
+}
+
+/*Titulo de la seccion*/
+section.academic h2.academic__title {
+    font-size: 32px;
+    text-align: center;
+
+}
+
+/*Posicion de la seccion*/
+section.academic div.academic__courses {
+    display: flex;
+    justify-content: center;
+}
+
+section.academic div.academic__courses__box {
+    width: 26.6rem;
+    margin: 0 1rem;
+}
+
+
+section.academic div.academic__courses__box ul {
+    margin: 32px;
+    padding: 0;
+}
+
+
+section.academic div.academic__courses__box ul li {
+    padding: 0;
+    margin: 32px;
+}
+
+div.academic__courses__box ul li.academic__courses__item__img {
+    background-color: var(--color-cajas);
+    padding: 8%;
+}
+
 
 /* experiencia*/
 
-section.experience {}
+section.experience {
+    padding: 64px 0;
+
+}
+
+/* Titulo seccion*/
+section.experience h2.experience__section__title {
+    font-size: 32px;
+    text-align: center;
+}
+
+/*Posicion de la seccion*/
+section.experience div.experiencie__box {
+    display: flex;
+    justify-content: center;
+}
+
+section.experience div.experience__box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
 
 /*Contacto*/
 
-section.formcontato {}
+section.formcontato {
+    padding: 64px 0;
+    background: #EAF2FD;
+}
+
+
+section.formcontato div.formcontato__contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.formcontato__text {
+    margin-left: 16px;
+}
+
+.formcontato__text .formcontato__form {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.formcontato__form input,
+textarea {
+    margin-bottom: 32px;
+    width: 656px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+
+
 
 /*footeer*/
 
-section.footer {}
+section.footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 1440px;
+
+}
+
+section.footer .footer__rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
