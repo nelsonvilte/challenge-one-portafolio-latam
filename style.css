@@ -160,6 +160,52 @@ section.about div.about__container p {
 
 }
 
+/*Sección Skills*/
+
+section.skills {
+    margin: 64px 100px
+}
+
+/* Titulo de la seccion*/
+section.skills h3.skills__title {
+    font-size: 32px;
+    text-align: center;
+}
+
+/*Alineacion de iconos*/
+section.skills div.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+/* Cajas Skills*/
+section.skills div.skills__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: var(--color-cajas);
+    margin: 22px 15px 22px 0px;
+    width: 150px;
+    height: 160px;
+
+}
+
+section.skills div.skills__box ul {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-titulos);
+}
+
+
+
 /*Sección Hobbies*/
 
 section.hobbies {}
