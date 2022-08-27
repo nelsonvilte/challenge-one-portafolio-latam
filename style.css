@@ -136,7 +136,29 @@ section.title div.title__div div.title__container ul {
 
 /*Sección About*/
 
-section.about {}
+section.about {
+    padding: 60px 153px;
+    background-color: var(--color-fondo-azul);
+}
+
+section.about div.about__container {
+    width: 700px;
+
+
+}
+
+section.about h3.about__title {
+    font-size: 32px;
+
+}
+
+section.about div.about__container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+
+}
 
 /*Sección Hobbies*/
 
