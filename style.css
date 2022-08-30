@@ -249,6 +249,18 @@ section.hobbies div.hobbies__box ul {
     color: var(--color-titulos);
 }
 
+section.hobbies div.hobbies__line div.hobbies__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: var(--color-cajas);
+    margin: 22px 15px 22px 0px;
+    width: 150px;
+    height: 160px;
+}
+
 
 /* Experiencia Académica*/
 
