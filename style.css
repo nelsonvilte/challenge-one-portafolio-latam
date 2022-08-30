@@ -252,6 +252,8 @@ section.hobbies div.hobbies__box ul {
 
 /* Experiencia Académica*/
 
+
+
 section.academic {
     padding: 64px 0;
     background-color: var(--color-fondo-azul);
@@ -318,6 +320,20 @@ section.experience div.experience__box {
     flex-direction: row-reverse;
 }
 
+.experience__info-container,
+.experience__info {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    width: 368px;
+    line-height: 8px;
+    margin-left: 16px;
+
+
+}
 
 
 
@@ -369,7 +385,7 @@ section.footer {
     align-items: center;
 
 
-    width: 1440px;
+    width: 100%k;
 
 }
 
