@@ -261,6 +261,41 @@ section.hobbies div.hobbies__line div.hobbies__box {
     height: 160px;
 }
 
+.experiencia__botao--repo {
+
+
+    width: 105px;
+    height: 51px;
+
+    /* Azul/100% */
+
+    background: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+}
+
+.experience__botao--demo {
+    width: 116px;
+    height: 51px;
+
+    /* Azul/100% */
+
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+
+.formcontato__botao {
+    width: 144px;
+    height: 51px;
+
+    /* Azul/100% */
+
+    background: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+}
+}
+
 
 /* Experiencia Académica*/
 
