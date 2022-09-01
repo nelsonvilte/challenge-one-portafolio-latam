@@ -15,6 +15,7 @@ coloque nas sessões indicadas*/
     --azul-botones: #2A7AE4;
 }
 
+
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
@@ -22,6 +23,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+
 }
 
 ol,
@@ -326,6 +328,7 @@ section.experience h2.experience__section__title {
 section.experience div.experiencie__box {
     display: flex;
     justify-content: center;
+    margin-bottom: 32px;
 }
 
 section.experience div.experience__box {
@@ -429,17 +432,18 @@ section.footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 
-
-    width: 100%k;
 
 }
 
-section.footer .footer__rodape {
+section.footer div.footer__rodape {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
