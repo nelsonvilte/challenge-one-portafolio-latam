@@ -108,9 +108,11 @@ section.title div.title__container h2 {
 
 /* imagen de perfil*/
 section.title img.title__profile {
+    border-radius: 50%;
     width: 368px;
-
+    height: 368px;
 }
+
 
 section.title div.title__div div.title__container h3 {
     font-size: 17px;
@@ -261,44 +263,9 @@ section.hobbies div.hobbies__line div.hobbies__box {
     height: 160px;
 }
 
-.experiencia__botao--repo {
-
-
-    width: 105px;
-    height: 51px;
-
-    /* Azul/100% */
-
-    background: #2A7AE4;
-    border: none;
-    color: #FFFFFF;
-}
-
-.experience__botao--demo {
-    width: 116px;
-    height: 51px;
-
-    /* Azul/100% */
-
-    border: 1px solid #2A7AE4;
-    color: #2A7AE4;
-}
-
-.formcontato__botao {
-    width: 144px;
-    height: 51px;
-
-    /* Azul/100% */
-
-    background: #2A7AE4;
-    border: none;
-    color: #FFFFFF;
-}
-
 
 
 /* Experiencia Académica*/
-
 
 
 section.academic {
@@ -365,6 +332,7 @@ section.experience div.experience__box {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
+    margin-bottom: 32px;
 }
 
 .experience__info-container,
@@ -382,6 +350,37 @@ section.experience div.experience__box {
 
 }
 
+.experiencia__botao--repo {
+    width: 105px;
+    height: 51px;
+
+    /* Azul/100% */
+
+    background: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+}
+
+.experience__botao--demo {
+    width: 116px;
+    height: 51px;
+
+    /* Azul/100% */
+
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+
+.formcontato__botao {
+    width: 144px;
+    height: 51px;
+
+    /* Azul/100% */
+
+    background: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+}
 
 
 
