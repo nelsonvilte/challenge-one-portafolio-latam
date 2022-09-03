@@ -90,7 +90,6 @@ section.menu nav ul.menu__list {
 
 section.title {
     margin: 0 153px;
-    width: 80%;
     color: var(--color-titulos);
 }
 
@@ -451,7 +450,7 @@ section.footer div.footer__rodape {
     padding: 20px;
 }
 
-/* Vamos a desafiarnos trabajando con responsividad?
+/*responsividad:
 Utiliza las referencias de los breakpoints @media abajo */
 
 
@@ -486,11 +485,12 @@ Utiliza las referencias de los breakpoints @media abajo */
     /*title*/
     section.title {
         margin: 0 32px;
-        width: 100%;
+
     }
 
     section div.title__container {
         width: 524px;
+        margin-right: 32px
     }
 
     section.title div.title__div {
@@ -500,7 +500,14 @@ Utiliza las referencias de los breakpoints @media abajo */
     section.title div.title__container h2 {
         font-size: 22px;
         line-height: 26px;
+
     }
+
+    section.title div.title__div div.title__container ul {
+        justify-content: space-between;
+    }
+
+
 
     section.title div.title__div div.title__container h3 {
         width: 524px;
@@ -534,12 +541,33 @@ Utiliza las referencias de los breakpoints @media abajo */
         height: 118px;
     }
 
+
+
+    /*Hobbies*/
+
+    section.hobbies {
+        margin: 32px 32px;
+    }
+
+    section.hobbies div.hobbies__line div.hobbies__box {
+        height: 118px;
+    }
+
+    /*Formación Académica*/
+
     section.academic {
         padding-top: 32px;
     }
 
+    section.academic div.academic__courses__box {
+        width: 12.6rem;
+        margin: 0 1rem;
+    }
+
+
     section.academic div.academic__courses__box ul {
         margin: 0px;
+
     }
 
     section.academic div.academic__courses__box ul li {
@@ -572,18 +600,6 @@ Utiliza las referencias de los breakpoints @media abajo */
         height: 58px;
     }
 
-
-    /*Hobbies*/
-
-    section.hobbies {
-        margin: 32px 32px;
-    }
-
-    section.hobbies div.hobbies__line div.hobbies__box {
-        height: 118px;
-    }
-
-    /*Formación Académica*/
 
     section.academic h2.academic__title {
         margin-top: 0px;
