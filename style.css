@@ -534,6 +534,10 @@ Utiliza las referencias de los breakpoints @media abajo */
         height: 118px;
     }
 
+    section.academic {
+        padding-top: 32px;
+    }
+
     section.academic div.academic__courses__box ul {
         margin: 0px;
     }
@@ -569,23 +573,86 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
 
+    /*Hobbies*/
+
+    section.hobbies {
+        margin: 32px 32px;
+    }
+
+    section.hobbies div.hobbies__line div.hobbies__box {
+        height: 118px;
+    }
+
+    /*Formación Académica*/
+
+    section.academic h2.academic__title {
+        margin-top: 0px;
+    }
+
+    /*Experiencia Profesional*/
+
+    section.experience {
+        padding: 32px 0;
+    }
+
+    section.experience div.experiencie__box {
+
+        flex-direction: column;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    section.experience div.experience__box {
+
+        flex-direction: column;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .experience__info-container,
+    .experience__info {
+        margin-top: 8px;
+        margin-left: 0px;
+
+
+    }
+
+    section.experience h2.experience__section__title {
+        margin-top: 0px;
+    }
+
+
+    /*Contacto*/
+
+    section.formcontato {
+        padding-top: 32px;
+    }
+
+    .formcontato--esquerda {
+        display: none;
+    }
+
+    .formcontato__form input,
+    textarea {
+        width: 99%;
+    }
+
+    .formcontato__text {
+        margin-left: 32px;
+        margin-right: 32px;
+
+    }
+
+    .formcontato__title {
+        margin-top: 0px
+    }
+
 }
 
 
 
-/*Hobbies*/
 
-section.hobbies {
-    margin: 32px 32px;
-}
 
-section.hobbies div.hobbies__line div.hobbies__box {
-    height: 118px;
-}
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
 
 
 
@@ -608,6 +675,7 @@ section.hobbies div.hobbies__line div.hobbies__box {
     /*Experiencia Profesional*/
 
     /*Contacto*/
+
 
     /*Footer*/
 
