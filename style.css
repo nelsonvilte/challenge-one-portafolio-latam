@@ -303,12 +303,17 @@ section.academic div.academic__courses__box ul {
 section.academic div.academic__courses__box ul li {
     padding: 0;
     margin: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.academic__courses__box ul li.academic__courses__item__img {
     background-color: var(--color-cajas);
     padding: 8%;
 }
+
+
 
 
 /* experiencia*/
@@ -451,26 +456,144 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     /* Menú */
 
+    section.menu {
+        margin: 32px;
+    }
+
+    section.menu nav ul.menu__list li:nth-child(-n+5) {
+        display: none;
+    }
+
+    section.title div.title__container h2 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+
+    section.menu nav ul.menu__list {
+        display: flex;
+        justify-content: end;
+        font-size: 16px;
+        width: 450px;
+    }
+
+
+
     /*title*/
+    section.title {
+        margin: 0 32px;
+        width: 100%;
+    }
+
+    section div.title__container {
+        width: 524px;
+    }
+
+    section.title div.title__div {
+        justify-content: left;
+    }
+
+    section.title div.title__container h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    section.title div.title__div div.title__container h3 {
+        width: 524px;
+        line-height: 19px;
+    }
+
+    section.title img.title__profile {
+        border-radius: 50%;
+        width: 146px;
+        height: 146px;
+    }
+
+    section.about {
+        padding: 32px 32px;
+
+    }
+
+    section.about div.about__container {
+        width: 100%;
+    }
+
 
     /*Skills*/
 
-    /*Hobbies*/
+    section.skills {
+        margin: 32px 32px;
+    }
 
-    /*Formación Académica*/
+    section.skills div.skills__box {
 
-    /*Experiencia Profesional*/
+        height: 118px;
+    }
+
+    section.academic div.academic__courses__box ul {
+        margin: 0px;
+    }
+
+    section.academic div.academic__courses__box ul li {
+        margin: 0px;
+        justify-content: start;
+    }
+
+    section.academic div.academic__courses__box ul li.academic__courses__item__title {
+        line-height: 18px;
+        height: 19px;
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    section.academic div.academic__courses__box ul li.academic__courses__item__subtitle {
+        line-height: 1rem;
+        font-weight: 500;
+        height: 16px;
+        font-size: 14px;
+        margin-top: 8px;
+
+    }
+
+    div.academic__courses__box ul li.academic__courses__item__img img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 70px;
+        margin-right: 70px;
+        width: 84px;
+        height: 58px;
+    }
+
 
 }
+
+
+
+/*Hobbies*/
+
+section.hobbies {
+    margin: 32px 32px;
+}
+
+section.hobbies div.hobbies__line div.hobbies__box {
+    height: 118px;
+}
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+
 
 /*Mobile*/
 @media (min-width: 425px) {
 
     /*Menu*/
+
 
     /*Titulo*/
 
