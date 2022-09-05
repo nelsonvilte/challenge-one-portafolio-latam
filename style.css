@@ -60,10 +60,16 @@ section.menu {
     margin: 0px 153px;
 }
 
+header.menu__header h3.menu__title {
+    white-space: nowrap;
+    margin-left: 2px
+}
+
 /*cabecera y espacios*/
 header.menu__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 16px;
     font-weight: 700;
     color: var(--color-titulos);
@@ -733,9 +739,9 @@ Utiliza las referencias de los breakpoints @media abajo */
         height: 16px;
     }
 
-    h3.menu__title {
+    header.menu__header h3.menu__title {
         white-space: nowrap;
-        margin-left: 8px
+        margin-left: 2px
     }
 
 
@@ -756,6 +762,16 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     section.title div.title__div div.title__container ul {
         width: 100%;
+    }
+
+    section.title div.title__container h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    section.title img.title__profile {
+        width: 98px;
+        height: 98px;
     }
 
 
@@ -840,7 +856,13 @@ Utiliza las referencias de los breakpoints @media abajo */
         width: 100%;
     }
 
+    section.experience div.experiencie__box img.experience__img{
+        margin-bottom: 8px;
+    }
 
+    section.experience div.experience__box img.experience__img{
+        margin-bottom: 8px;
+    }
 
 
     /*Footer*/
