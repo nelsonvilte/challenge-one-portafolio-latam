@@ -301,10 +301,14 @@ section.academic div.academic__courses__box ul {
 
 section.academic div.academic__courses__box ul li {
     padding: 0;
-    margin: 32px;
+    margin: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section.academic div.academic__courses__box ul li.academic__courses__item__img {
+    height: 286px;
 }
 
 div.academic__courses__box ul li.academic__courses__item__img {
@@ -312,6 +316,33 @@ div.academic__courses__box ul li.academic__courses__item__img {
     padding: 8%;
 }
 
+section.academic div.academic__courses__box ul li.academic__courses__item__title {
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: left;
+
+}
+
+section.academic div.academic__courses__box ul li.academic__courses__item__subtitle {
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: left;
+}
+
+section.academic div.academic__courses__box ul li.academic__courses__item__title h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+section.academic div.academic__courses__box ul li.academic__courses__item__subtitle p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
 
 
 
@@ -455,7 +486,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width:768px) {
 
     /* Menú */
 
@@ -572,7 +603,14 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     section.academic div.academic__courses__box ul li {
         margin: 0px;
-        justify-content: start;
+        justify-content: center;
+
+
+    }
+
+    section.academic div.academic__courses__box ul li.academic__courses__item__img {
+        height: 118px;
+        width: 100%;
     }
 
     section.academic div.academic__courses__box ul li.academic__courses__item__title {
@@ -592,10 +630,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     div.academic__courses__box ul li.academic__courses__item__img img {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 70px;
-        margin-right: 70px;
+
         width: 84px;
         height: 58px;
     }
@@ -665,32 +700,147 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 }
 
-
-
-
-
-
-
-
 /*Mobile*/
-@media (min-width: 425px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+
+    body {
+        width: 767px;
+    }
 
     /*Menu*/
 
+    section.menu {
+        margin: 16px;
+    }
+
+    section.title {
+        padding: 0px;
+        margin: 0 16px;
+    }
+
+    section.menu nav ul.menu__list li:nth-child(-n+5) {
+        display: none;
+    }
+
+
+
+    header.menu__header {
+        align-items: center;
+    }
+
+    header.menu__header img {
+        width: 16px;
+        height: 16px;
+    }
+
+    h3.menu__title {
+        white-space: nowrap;
+        margin-left: 8px
+    }
+
+
+    section.menu nav ul.menu__list {
+        justify-content: end;
+        width: 300px;
+    }
 
     /*Titulo*/
 
+    section.title div.title__div {
+        flex-direction: column;
+    }
+
+    section.title div.title__div div.title__container h3 {
+        width: 100%;
+    }
+
+    section.title div.title__div div.title__container ul {
+        width: 100%;
+    }
+
+
     /*Sección sobre mi*/
+
+    section.about {
+        padding: 60px 16px;
+    }
 
     /*Skills*/
 
+    section.skills {
+        margin: 32px 32px;
+    }
+
+    section.skills div.skills__box {
+        width: 275px;
+    }
+
+    section.skills div.skills__box {
+        justify-content: center;
+    }
+
+    section.skills div.skills__box ul img {
+        margin-bottom: 8px;
+    }
+
     /*Hobbies*/
 
+    section.hobbies {
+        margin: 32px 32px;
+    }
+
+    section.hobbies div.hobbies__line {
+        width: 100%;
+    }
+
+    section.hobbies div.hobbies__line div.hobbies__box {
+        width: 275px;
+    }
+
     /*Formación Académica*/
+
+    section.academic div.academic__courses__box {
+        width: 36.6rem;
+    }
+
+    section.academic div.academic__courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.experience div.experiencie__box {
+        flex-direction: column;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    section.experience div.experience__box {
+        flex-direction: column;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+
+
+
 
     /*Experiencia Profesional*/
 
     /*Contacto*/
+
+    .formcontato--esquerda {
+        display: none;
+    }
+
+    .formcontato__text {
+        margin: 0 32px;
+    }
+
+    .formcontato__text .formcontato__form {
+        width: 100%;
+    }
+
+
 
 
     /*Footer*/
