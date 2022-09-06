@@ -172,7 +172,8 @@ section.about div.about__container p {
 /*Sección Skills*/
 
 section.skills {
-    margin: 64px 100px
+    margin: 0px 100px 60px 100px;
+    padding-top: 64px;
 }
 
 /* Titulo de la seccion*/
@@ -218,7 +219,8 @@ section.skills div.skills__box ul {
 /*Sección Hobbies*/
 
 section.hobbies {
-    margin: 60px 100px;
+    margin: 0px 100px 60px 100px;
+    padding-top: 64px;
 }
 
 /* Titulos de la seccion*/
@@ -480,7 +482,7 @@ section.formcontato div.formcontato__contacto {
 .formcontato__form input,
 textarea {
     margin-bottom: 32px;
-    width: 656px;
+    width: 90%;
     height: 56px;
     background: #FFFFFF;
     border-radius: 4px;
