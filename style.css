@@ -350,8 +350,6 @@ section.academic div.academic__courses__box ul li.academic__courses__item__subti
 
 }
 
-
-
 /* experiencia*/
 
 section.experience {
@@ -372,6 +370,30 @@ section.experience div.experiencie__box {
     margin-bottom: 32px;
 }
 
+div.experience__info h2 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 0px;
+}
+
+div.experience__info p {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 8px;
+}
+
+div.experience__info-container h2 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 0px;
+}
+
+div.experience__info-container p {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 8px;
+}
+
 section.experience div.experience__box {
     display: flex;
     justify-content: center;
@@ -388,7 +410,6 @@ section.experience div.experience__box {
     align-content: center;
     justify-content: center;
     width: 368px;
-    line-height: 8px;
     margin-left: 16px;
 
 
@@ -403,6 +424,7 @@ section.experience div.experience__box {
     background: #2A7AE4;
     border: none;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .experience__botao--demo {
@@ -413,6 +435,7 @@ section.experience div.experience__box {
 
     border: 1px solid #2A7AE4;
     color: #2A7AE4;
+    cursor: pointer;
 }
 
 .formcontato__botao {
@@ -424,6 +447,7 @@ section.experience div.experience__box {
     background: #2A7AE4;
     border: none;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 
@@ -856,11 +880,11 @@ Utiliza las referencias de los breakpoints @media abajo */
         width: 100%;
     }
 
-    section.experience div.experiencie__box img.experience__img{
+    section.experience div.experiencie__box img.experience__img {
         margin-bottom: 8px;
     }
 
-    section.experience div.experience__box img.experience__img{
+    section.experience div.experience__box img.experience__img {
         margin-bottom: 8px;
     }
 
