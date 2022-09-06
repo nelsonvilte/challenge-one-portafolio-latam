@@ -565,7 +565,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     section.title div.title__div div.title__container ul {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 
