@@ -299,7 +299,9 @@
                         usted lo antes posible. </h3>
                     <form class="formcontato__form" name="form">
                         <div class="input-container">
-                            <input name="name" type="text" class="input" placeholder="Nombre" required>
+                            <input name="name" type="text" class="input" placeholder="Nombre" required maxlength="50"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*[0-9])(?!.*[ !@#$%^&*_=+-])"
+                                title="Máximo 50 letras y no puede contener números ni caracteres especiales.">
                             <label for="name" class="input-label">Nombre</label>
                             <span class="input-message-error">Este campo no es valido</span>
                         </div>
@@ -311,7 +313,8 @@
                         </div>
 
                         <div class="input-container">
-                            <input name="asunto" type="text" class="input" placeholder="Asunto" required>
+                            <input name="asunto" type="text" class="input" placeholder="Asunto" required maxlength="30"
+                                title="Máximo 50 letras y no puede contener números ni caracteres especiales.">
                             <label for="asunto" class="input-label">Asunto</label>
                             <span class="input-message-error">Este campo no es valido</span>
                         </div>
