@@ -352,7 +352,7 @@ section.academic div.academic__courses__box ul li.academic__courses__item__subti
 
 }
 
-/* experiencia*/
+/* experiencia proyectos*/
 
 section.experience {
     padding: 64px 0;
@@ -486,6 +486,66 @@ textarea {
     height: 56px;
     background: #FFFFFF;
     border-radius: 4px;
+}
+
+
+.input-container {
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.input {
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--cor-de-link);
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+}
+
+input::placeholder {
+    visibility: hidden;
+    color: var(--color-titulos);
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: var(--font-size-input-label);
+    transition: all 0.25s;
+}
+
+.input:not(:placeholder-shown)+.input-label,
+.input:focus+.input-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+}
+
+.input-container--invalid{
+    margin-bottom: 00.5rem;
+}
+
+.input-container--invalid .input{
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+}
+
+.input-container--invalid .input-label{
+    color: var(--warning-color);
+}
+
+.input-message-error{
+    display: none;
 }
 
 
@@ -889,6 +949,11 @@ Utiliza las referencias de los breakpoints @media abajo */
     section.experience div.experience__box img.experience__img {
         margin-bottom: 8px;
     }
+
+
+
+
+
 
 
     /*Footer*/
