@@ -482,10 +482,16 @@ section.formcontato div.formcontato__contacto {
 .formcontato__form input,
 textarea {
     margin-bottom: 32px;
-    width: 90%;
+    /* width: 90%;*/
     height: 56px;
     background: #FFFFFF;
     border-radius: 4px;
+}
+
+.formcontato__form textarea {
+    padding: 1.375rem 0.5rem 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
