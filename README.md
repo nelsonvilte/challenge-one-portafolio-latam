@@ -14,4 +14,4 @@
 
 #### 🔹style.css: Documento de CSS.
 
-#### 🔹validacao.js: Documento donde se desarrolla la lógica de programación para validar formularios usando Javascript.
+#### 🔹validacion.js: Documento donde se desarrolla la lógica de programación para validar formularios usando Javascript.
