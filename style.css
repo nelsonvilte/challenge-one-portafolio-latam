@@ -13,6 +13,7 @@ coloque nas sessões indicadas*/
     --color-fondo-azul: #EAF2FD;
     --color-cajas: #fbfbfb;
     --azul-botones: #2A7AE4;
+    --warning-color: #df2525;
 }
 
 
@@ -479,10 +480,8 @@ section.formcontato div.formcontato__contacto {
     align-self: stretch;
 }
 
-.formcontato__form input,
-textarea {
-    margin-bottom: 32px;
-    /* width: 90%;*/
+.formcontato__form input {
+    margin-bottom: 0px;
     height: 56px;
     background: #FFFFFF;
     border-radius: 4px;
@@ -491,6 +490,7 @@ textarea {
 .formcontato__form textarea {
     padding: 1.375rem 0.5rem 0.5rem;
     width: 100%;
+    margin-bottom: 0px;
     box-sizing: border-box;
 }
 
@@ -538,7 +538,7 @@ input:focus {
 }
 
 .input-container--invalid {
-    margin-bottom: 00.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .input-container--invalid .input {
@@ -554,7 +554,74 @@ input:focus {
     display: none;
 }
 
+.input-container--invalid .input-message-error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
 
+/* .textarea {
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 7px;
+    width: 100%;
+    min-height: 3rem;
+} */
+
+.textarea-container {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: var(--font-weigth-input);
+}
+
+.textarea::placeholder {
+    visibility: hidden;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.textarea-label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: var(--font-size-input-label);
+    transition: all 0.25s;
+}
+
+.textarea:not(:placeholder-shown)+.textarea-label,
+.textarea:focus+.textarea-label {
+    font-size: 0.875rem;
+    top: -1.25rem;
+    transition: all 0.25s;
+}
+
+.textarea-container--invalid {
+    margin-bottom: 0.5rem;
+}
+
+.textarea-container--invalid .textarea {
+    border: 1px solid var(--warning-color);
+}
+
+.textarea-container--invalid .textarea-label {
+    color: var(--warning-color);
+}
+
+.textarea-message-erro {
+    display: none;
+}
+
+.textarea-container--invalid .textarea-message-erro {
+    display: block;
+    color: var(--warning-color);
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
 
 
 /*footeer*/
@@ -796,6 +863,68 @@ Utiliza las referencias de los breakpoints @media abajo */
         margin-top: 0px
     }
 
+    .textarea {
+        box-sizing: border-box;
+        border: 1px solid var(--secondary-color);
+        padding: 0.5rem;
+        border-radius: 7px;
+        width: 100%;
+        min-height: 3rem;
+    }
+
+    .textarea-container {
+        position: relative;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: var(--font-weigth-input);
+    }
+
+    .textarea::placeholder {
+        visibility: hidden;
+    }
+
+    .textarea:focus {
+        outline: none;
+    }
+
+    .textarea-label {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        font-size: var(--font-size-input-label);
+        transition: all 0.25s;
+    }
+
+    .textarea:not(:placeholder-shown)+.textarea-label,
+    .textarea:focus+.textarea-label {
+        font-size: 0.875rem;
+        top: -1.25rem;
+        transition: all 0.25s;
+    }
+
+    .textarea-container--invalid {
+        margin-bottom: 0.5rem;
+    }
+
+    .textarea-container--invalid .textarea {
+        border: 1px solid var(--warning-color);
+    }
+
+    .textarea-container--invalid .textarea-label {
+        color: var(--warning-color);
+    }
+
+    .textarea-mensagem-erro {
+        display: none;
+    }
+
+    .textarea-container--invalid .textarea-mensagem-erro {
+        display: block;
+        color: var(--warning-color);
+        margin-top: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
 }
 
 /*Mobile*/
@@ -955,6 +1084,8 @@ Utiliza las referencias de los breakpoints @media abajo */
     section.experience div.experience__box img.experience__img {
         margin-bottom: 8px;
     }
+
+
 
 
 
