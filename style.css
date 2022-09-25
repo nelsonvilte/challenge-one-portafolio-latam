@@ -38,7 +38,7 @@ a {
     color: var(--cor-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+/*En este desafío utilizar la metodología BEM. 
 
 Lo que es el BEM?
 
@@ -421,9 +421,6 @@ section.experience div.experience__box {
 .experiencia__botao--repo {
     width: 105px;
     height: 51px;
-
-    /* Azul/100% */
-
     background: #2A7AE4;
     border: none;
     color: #FFFFFF;
@@ -433,9 +430,6 @@ section.experience div.experience__box {
 .experience__botao--demo {
     width: 116px;
     height: 51px;
-
-    /* Azul/100% */
-
     border: 1px solid #2A7AE4;
     color: #2A7AE4;
     cursor: pointer;
@@ -460,10 +454,6 @@ button:disabled {
     cursor: none;
 
 }
-
-
-
-
 
 /*Contacto*/
 
@@ -569,15 +559,6 @@ input:focus {
     padding-left: 0.5rem;
 }
 
-/* .textarea {
-    box-sizing: border-box;
-    border: 1px solid var(--secondary-color);
-    padding: 0.5rem;
-    border-radius: 7px;
-    width: 100%;
-    min-height: 3rem;
-} */
-
 .textarea-container {
     position: relative;
     margin-top: 2rem;
@@ -642,8 +623,6 @@ section.footer {
     align-items: center;
     width: 100%;
     height: 100%;
-
-
 }
 
 section.footer div.footer__rodape {
@@ -654,8 +633,7 @@ section.footer div.footer__rodape {
     padding: 20px;
 }
 
-/*responsividad:
-Utiliza las referencias de los breakpoints @media abajo */
+/*responsividad: referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
@@ -936,11 +914,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-
-    body {
-        width: 767px;
-    }
+@media only screen and (max-width: 480px) {
 
     /*Menu*/
 
@@ -976,7 +950,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     section.menu nav ul.menu__list {
         justify-content: end;
-        width: 300px;
+        width: auto;
     }
 
     /*Titulo*/
@@ -1010,18 +984,31 @@ Utiliza las referencias de los breakpoints @media abajo */
         padding: 60px 16px;
     }
 
+    section.about div.about__container {
+        width: auto;
+    }
+
     /*Skills*/
 
     section.skills {
-        margin: 32px 32px;
+        margin: 16px 16px;
     }
 
-    section.skills div.skills__box {
-        width: 275px;
+    section.skills div.skills__line {
+        width: 100%;
+        flex-direction: row;
+
     }
+
+    /*  section.skills div.skills__box {
+        width: 275px;
+    } */
 
     section.skills div.skills__box {
         justify-content: center;
+        width: 100px;
+        height: 100px;
+        margin: 22px 0px 22px 0px
     }
 
     section.skills div.skills__box ul img {
@@ -1031,27 +1018,43 @@ Utiliza las referencias de los breakpoints @media abajo */
     /*Hobbies*/
 
     section.hobbies {
-        margin: 32px 32px;
+        margin: 16px 16px;
     }
 
     section.hobbies div.hobbies__line {
         width: 100%;
+        flex-direction: row;
+
     }
 
     section.hobbies div.hobbies__line div.hobbies__box {
-        width: 275px;
+        width: 100px;
+        height: 100px;
+        margin: 22px 0px 22px 0px
     }
 
     /*Formación Académica*/
 
     section.academic div.academic__courses__box {
-        width: 36.6rem;
+        width: auto;
+    }
+
+    section.academic div.academic__courses__box ul {
+        margin: 16px;
+        width: 300PX;
+        height: 170px;
+    }
+
+    section.academic div.academic__courses__box ul li.academic__courses__item__img {
+        height: 118px;
     }
 
     section.academic div.academic__courses {
         flex-direction: column;
         align-items: center;
     }
+
+    /*Experiencia Profesional*/
 
     section.experience div.experiencie__box {
         flex-direction: column;
@@ -1065,11 +1068,10 @@ Utiliza las referencias de los breakpoints @media abajo */
         margin-right: 32px;
     }
 
-
-
-
-
-    /*Experiencia Profesional*/
+    .experience__info-container,
+    .experience__info {
+        width: auto;
+    }
 
     /*Contacto*/
 
@@ -1091,6 +1093,14 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     section.experience div.experience__box img.experience__img {
         margin-bottom: 8px;
+    }
+
+    button:disabled {
+        width: 100%;
+    }
+
+    .formcontato__botao {
+        width: 100%;
     }
 
 
