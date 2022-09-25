@@ -3,7 +3,6 @@ export function validar(input) {
   if (validadores[tipoDeInput]) {
     validadores[tipoDeInput](input);
   }
-  console.log(input.parentElement);
   if (input.validity.valid) {
     input.parentElement.classList.remove("input-container--invalid");
     input.parentElement.querySelector(".input-message-error").innerHTML = "";
@@ -14,20 +13,20 @@ export function validar(input) {
   }
 }
 
+
 export function validarTextarea(textarea) {
   const tipoTextarea = textarea.dataset.tipo;
- 
+
   if (validadores[tipoTextarea]) {
     validadores[tipoTextarea](textarea);
   }
-  console.log(textarea.parentElement);
-  console.log(textarea.value.length);
+
   if (textarea.value.length != 0) {
-    
+
     textarea.parentElement.classList.remove("textarea-container--invalid");
     textarea.parentElement.querySelector(".textarea-message-erro").innerHTML = "";
+
   } else {
-    console.log("false");
     textarea.parentElement.classList.add("textarea-container--invalid");
     textarea.parentElement.querySelector(".textarea-message-erro").innerHTML = textareaMensajeDeError(tipoTextarea, textarea);
   }
@@ -74,9 +73,9 @@ function mostrarMensajeDeError(tipoDeInput, input) {
   let mensaje = "";
   tipoDeErrores.forEach((error) => {
     if (input.validity[error]) {
-   /*    console.log(tipoDeInput, error);
-      console.log(input.validity[error]);
-      console.log(mensajesDeError[tipoDeInput][error]); */
+      /*    console.log(tipoDeInput, error);
+         console.log(input.validity[error]);
+         console.log(mensajesDeError[tipoDeInput][error]); */
       mensaje = mensajesDeError[tipoDeInput][error];
     }
   });
@@ -87,9 +86,9 @@ function textareaMensajeDeError(tipoDeInput, input) {
   let mensaje = "";
   tipoDeErrores.forEach((error) => {
     if (input.validity[error]) {
-     /*  console.log(tipoDeInput, error);
-      console.log(input.validity[error]);
-      console.log(mensajesDeError[tipoDeInput][error]); */
+      /*  console.log(tipoDeInput, error);
+       console.log(input.validity[error]);
+       console.log(mensajesDeError[tipoDeInput][error]); */
       mensaje = mensajesDeError[tipoDeInput][error];
     }
   });

@@ -444,14 +444,21 @@ section.experience div.experience__box {
 .formcontato__botao {
     width: 144px;
     height: 51px;
-
-
-    /* Azul/100% */
-
     background: #2A7AE4;
     border: none;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+button:disabled {
+    width: 144px;
+    height: 51px;
+    background: grey;
+    border: none;
+    color: #FFFFFF;
+    text-decoration: line-through;
+    cursor: none;
+
 }
 
 

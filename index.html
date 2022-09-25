@@ -298,7 +298,7 @@
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con
                         usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
+                    <form class="formcontato__form" name="form" id="form">
                         <div class="input-container">
                             <input id="inputName" name="name" type="text" class="input" placeholder="Nombre" required
                                 data-tipo="nombre">
@@ -307,28 +307,28 @@
                         </div>
 
                         <div class="input-container">
-                            <input name="email" type="email" class="input" placeholder="Email" required
+                            <input id="email" name="email" type="email" class="input" placeholder="Email" required
                                 data-tipo="email">
                             <label for="email" class="input-label">Email</label>
                             <span class="input-message-error">Este campo no es valido</span>
                         </div>
 
                         <div class="input-container">
-                            <input name="asunto" type="text" class="input" placeholder="Asunto" required maxlength="30"
-                                data-tipo="asunto">
+                            <input id="asunto" name="asunto" type="text" class="input" placeholder="Asunto" required
+                                maxlength="30" data-tipo="asunto">
                             <label for="asunto" class="input-label">Asunto</label>
                             <span class="input-message-error">Este campo no es valido</span>
                         </div>
 
                         <div class="textarea-container">
                             <textarea class="textarea" rows="4" cols="40" id="mensaje" name="mensaje"
-                                placeholder="Mensaje" required data-tipo="mensaje"></textarea>
+                                placeholder="Mensaje" required data-tipo="mensaje" id="mensaje"></textarea>
                             <label for="mensaje" class="textarea-label">Mensaje</label>
                             <span class="textarea-message-erro">Este campo no es valido</span>
                         </div>
 
 
-                        <button type="submit" class="formcontato__botao" disabled>Enviar mensaje</button>
+                        <button disabled type="submit" class="formcontato__botao" id="enviar">Enviar mensaje</button>
                     </form>
                 </div>
             </div>
