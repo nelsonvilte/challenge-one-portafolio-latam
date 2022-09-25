@@ -7,14 +7,17 @@
 ### ¡Bienvenido/a al proyecto Mi Portafolio ! :
 
 Challenge ONE Front-End Sprint 01: de Figma a HTML y CSS
+
 El siguiente proyecto forma parte del Programa Oracle Next Education junto a Alura Latam.
 
 ---
 
 ### 🏆 Repositorio:
 
-#### 🔹index.html: Documento html.
+🔹index.html: Documento html.
 
-#### 🔹style.css: Documento de estilos CSS.
+🔹style.css: Documento de estilos CSS.
 
-#### 🔹validacion.js: Documento donde se desarrolla la lógica de programación para validar formularios usando Javascript.
+🔹validacion.js: Documento donde se desarrolla la lógica de programación para validar formularios usando Javascript.
+
+🔹__variables.css: propiedades personalizadas.
