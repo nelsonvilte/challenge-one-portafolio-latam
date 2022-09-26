@@ -646,11 +646,18 @@ section.footer div.footer__rodape {
 
     section.menu {
         margin: 32px;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     section.menu nav ul.menu__list li:nth-child(-n+5) {
         display: none;
+    }
+
+    section.menu nav ul.menu__list {
+        display: flex;
+        justify-content: end;
+        font-size: 16px;
+        width: auto;
     }
 
     section.title div.title__container h2 {
@@ -659,12 +666,7 @@ section.footer div.footer__rodape {
         line-height: 25px;
     }
 
-    section.menu nav ul.menu__list {
-        display: flex;
-        justify-content: end;
-        font-size: 16px;
-        width: 450px;
-    }
+
 
 
 
@@ -675,8 +677,8 @@ section.footer div.footer__rodape {
     }
 
     section div.title__container {
-        width: 524px;
-        margin-right: 32px
+        width: 70%;
+        margin-right: 16px
     }
 
     section.title div.title__div {
@@ -985,6 +987,10 @@ section.footer div.footer__rodape {
 
     /*Sección sobre mi*/
 
+    section.about h3.about__title {
+        font-size: 1.5rem;
+    }
+
     section.about {
         padding: 60px 16px;
     }
@@ -994,6 +1000,11 @@ section.footer div.footer__rodape {
     }
 
     /*Skills*/
+
+    section.skills h3.skills__title {
+        font-size: 1.5em;
+
+    }
 
     section.skills {
         margin: 16px 16px;
@@ -1017,6 +1028,11 @@ section.footer div.footer__rodape {
     }
 
     /*Hobbies*/
+
+    section.hobbies h3.hobbies__title {
+        font-size: 1.5rem;
+
+    }
 
     section.hobbies {
         margin: 16px 16px;
@@ -1055,7 +1071,16 @@ section.footer div.footer__rodape {
         align-items: center;
     }
 
+    section.academic h2.academic__title {
+        font-size: 1.5rem;
+    }
+
     /*Experiencia Profesional*/
+    section.experience h2.experience__section__title {
+        font-size: 1.5rem;
+
+    }
+
 
     section.experience div.experiencie__box {
         flex-direction: column;
@@ -1114,4 +1139,24 @@ section.footer div.footer__rodape {
 
     /*Footer*/
 
+}
+
+/* Desktop*/
+
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+    section.menu {
+        margin: 32px;
+        justify-content: space-between;
+    }
+
+    section.menu nav ul.menu__list li:nth-child(-n+5) {
+        display: none;
+    }
+
+    section.menu nav ul.menu__list {
+        display: flex;
+        justify-content: end;
+        font-size: 16px;
+        width: auto;
+    }
 }
