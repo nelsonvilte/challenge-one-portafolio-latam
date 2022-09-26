@@ -51,10 +51,13 @@ Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
+.tudo {
+    width: auto;
+}
 
 section.menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     align-content: flex-end;
     height: 10vh;
@@ -643,6 +646,7 @@ section.footer div.footer__rodape {
 
     section.menu {
         margin: 32px;
+        justify-content: center;
     }
 
     section.menu nav ul.menu__list li:nth-child(-n+5) {
@@ -920,6 +924,7 @@ section.footer div.footer__rodape {
 
     section.menu {
         margin: 16px;
+        justify-content: space-between;
     }
 
     section.title {
@@ -999,10 +1004,6 @@ section.footer div.footer__rodape {
         flex-direction: row;
 
     }
-
-    /*  section.skills div.skills__box {
-        width: 275px;
-    } */
 
     section.skills div.skills__box {
         justify-content: center;
